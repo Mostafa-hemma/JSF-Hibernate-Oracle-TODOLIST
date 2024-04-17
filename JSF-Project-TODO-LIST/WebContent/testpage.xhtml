@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>My Page</title>
+</h:head>
+<h:body>
+	<h:dataTable value="#{dashboard.customerTasks}" var="data">
+		<h:column>
+			<h:outputText value="#{data.taskName}" />
+		</h:column>
+		<h:column>
+			<h:outputText value="#{data.startDate}" />
+		</h:column>
+		<h:column>
+			<h:outputText value="#{data.endDate}" />
+		</h:column>
+		<h:column>
+			<h:outputText value="#{data.taskDescription}" />
+		</h:column>
+		<h:column>
+			<h:outputText value="#{data.taskStatus}" />
+		</h:column>
+
+		<!-- Add more columns as needed -->
+	</h:dataTable>
+</h:body>
+</html>
